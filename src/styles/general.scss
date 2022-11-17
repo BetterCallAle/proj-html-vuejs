@@ -1,0 +1,5 @@
+// Import the variables file
+@use "./partials/variables" as *;
+
+// Import Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap.scss";
