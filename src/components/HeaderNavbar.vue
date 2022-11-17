@@ -18,9 +18,10 @@ export default {
         v-for="(link, index) in links"
         :key="index"
         class="d-inline-block ms_margin"
+        :class="{'active' : link.isActive}"
       >
 
-        <a :href="link.linkUrl">{{ link.linkTxt }}</a>
+        <a :href="link.linkUrl" @click.prevent="$emit('linkClicked', index)" >{{ link.linkTxt }}</a>
 
       </li>
     </ul>
@@ -62,7 +63,7 @@ export default {
     <button class="ms_btn-search">
       <i class="fa-solid fa-magnifying-glass"></i>
     </button>
-    
+
   </nav>
   <!-- /navbar -->
 </template>
@@ -73,6 +74,21 @@ export default {
     .header-nav {
     width: 60%;
     color: white;
+
+    .active{
+        position: relative;
+        &::after{
+            content: "";
+            display: block;
+            width: 30px;
+            height: 30px;
+            background-color: $main-light-blue;
+            position: absolute;
+            bottom: -50px;
+            right: 50%;
+            transform: rotate(135deg) translateX(-50%);
+        }
+    }
 
     .ms_margin {
         margin-left: 1rem;

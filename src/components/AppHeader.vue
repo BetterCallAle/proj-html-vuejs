@@ -10,41 +10,55 @@ export default{
             links:[
                 {
                     linkTxt: "Home",
-                    linkUrl: "/home" 
+                    linkUrl: "/home",
+                    isActive: true
                 },
 
                 {
                     linkTxt: "Apple",
-                    linkUrl: "/avada-apple" 
+                    linkUrl: "/avada-apple",
+                    isActive: false
                 },
 
                 {
                     linkTxt: "Microsoft",
-                    linkUrl: "/avada-microsoft" 
+                    linkUrl: "/avada-microsoft",
+                    isActive: false
                 },
 
                 {
                     linkTxt: "Android",
-                    linkUrl: "/avada-android" 
+                    linkUrl: "/avada-android",
+                    isActive: false
                 },
 
                 {
                     linkTxt: "Forums",
-                    linkUrl: "/forums" 
+                    linkUrl: "/forums",
+                    isActive: false
                 },
 
                 {
                     linkTxt: "Contact Us",
-                    linkUrl: "/contact-us" 
+                    linkUrl: "/contact-us",
+                    isActive: false
                 }
             ],
 
             isMenuActive: false,
+
+            defaultActive: 0
         }
     },
     methods:{
         openMenu(){
             this.isMenuActive = !this.isMenuActive;
+        },
+
+        letLinkActive(index){
+            this.links[this.defaultActive].isActive = false;
+            this.links[index].isActive = true;
+            this.defaultActive = index;
         }
     }
 }
@@ -61,7 +75,7 @@ export default{
             </div>
             <!-- /logo -->
 
-            <HeaderNavbar :links="links" :menuActive="isMenuActive" @buttonClicked="openMenu"/>
+            <HeaderNavbar :links="links" :menuActive="isMenuActive" @buttonClicked="openMenu" @linkClicked="letLinkActive"/>
         </div>
     </header>
 </template>
