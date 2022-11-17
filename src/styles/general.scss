@@ -1,14 +1,23 @@
 // Import the variables file
 @use "./partials/variables" as *;
 
+//Import font overpass from fountsource
+@import "../../node_modules/@fontsource/overpass/100.css";
+@import "../../node_modules/@fontsource/overpass/200.css";
+@import "../../node_modules/@fontsource/overpass/300.css";
+@import "../../node_modules/@fontsource/overpass/400.css";
+@import "../../node_modules/@fontsource/overpass/500.css";
+@import "../../node_modules/@fontsource/overpass/600.css";
+@import "../../node_modules/@fontsource/overpass/700.css";
+
 // Import Font Awesome
 @import "node_modules/@fortawesome/fontawesome-free/css/all.css";
 // Import Bootstrap
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
 //Style
-body{
-    font-family: sans-serif;
+body{ 
+    font-family: "Overpass", sans-serif; 
 }
 
 img{
