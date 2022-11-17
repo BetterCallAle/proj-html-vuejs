@@ -21,7 +21,7 @@ export default {
         :class="{'active' : link.isActive}"
       >
 
-        <a :href="link.linkUrl" @click.prevent="$emit('linkClicked', index)" >{{ link.linkTxt }}</a>
+        <a :href="link.linkUrl" @click.prevent="$emit('linkClicked', index)" class="header-link">{{ link.linkTxt }}</a>
 
       </li>
     </ul>
@@ -52,7 +52,7 @@ export default {
     <div v-if="menuActive" class="mobile-menu">
       <ul>
         <li v-for="(link, index) in links" :key="index">
-          <a :href="link.linkUrl">{{ link.linkTxt }}</a>
+          <a :href="link.linkUrl" class="header-link">{{ link.linkTxt }}</a>
         </li>
       </ul>
     </div>
@@ -74,6 +74,13 @@ export default {
     .header-nav {
     width: 60%;
     color: white;
+
+    .header-link{
+      transition: all 300ms linear;
+      &:hover{
+        color: blue;
+      }
+    }
 
     .active{
         position: relative;
@@ -117,8 +124,8 @@ export default {
         width: 80%;
 
         .ms_margin {
-            margin-left: 0;
-            margin-right: 3rem;
+          margin-left: 0;
+          margin-right: 3rem;
         }
     }
     }
