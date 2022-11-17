@@ -51,13 +51,18 @@ export default{
         }
     },
     methods:{
+        // Toggle the boolean in isMenuActive
         openMenu(){
             this.isMenuActive = !this.isMenuActive;
         },
 
+        // Switch the active class
         letLinkActive(index){
+            // remove the active class from the prev link
             this.links[this.defaultActive].isActive = false;
+            // add the active calss to the current link
             this.links[index].isActive = true;
+            // make the default active link the clicked one
             this.defaultActive = index;
         }
     }

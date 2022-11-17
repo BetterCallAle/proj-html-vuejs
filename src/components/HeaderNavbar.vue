@@ -107,7 +107,7 @@ export default {
         transform: translateX(-50%);
 
         li {
-        margin-bottom: 1rem;
+            margin-bottom: 1rem;
         }
     }
     }
@@ -117,8 +117,8 @@ export default {
         width: 80%;
 
         .ms_margin {
-        margin-left: 0;
-        margin-right: 3rem;
+            margin-left: 0;
+            margin-right: 3rem;
         }
     }
     }
