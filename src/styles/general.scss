@@ -41,7 +41,7 @@ a{
 .ms_btn{
     padding-top: .6rem;
     padding-bottom: .6rem;
-    border-radius: 3px;
+    border-radius: 2px;
     border: none;
     font-weight: 700;
     cursor: pointer;
@@ -61,6 +61,13 @@ a{
     font-size: .8rem;
 }
 
+.ms_btn-normal{
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    font-size: .9rem;
+}
+
+
 .ms_btn-black{
     color: white;
     background-color: $heading-txt-color;
@@ -71,3 +78,11 @@ a{
     }
 }
 
+.ms_btn-light-blue{
+    background-color: $main-light-blue;
+    color: white;
+    &:hover{
+        background-color: lighten($main-light-blue, 5%);
+        color: white;
+    }
+}

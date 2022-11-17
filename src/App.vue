@@ -1,14 +1,23 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
+import JumboTop from './components/JumboTop.vue';
 export default{
   components:{
-    AppHeader
+    AppHeader,
+    JumboTop
   }
 }
 </script>
 
 <template>
+  <!-- Header -->
   <AppHeader />
+
+  <!-- Main -->
+  <main>
+    <JumboTop />
+  </main>
+
 </template>
 
 <style lang="scss">
