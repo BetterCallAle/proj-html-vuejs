@@ -1,5 +1,6 @@
-// Import the variables file
+// Import the variables and mixin file
 @use "./partials/variables" as *;
+@use "./partials/mixin" as *;
 
 //Import font overpass from fountsource
 @import "node_modules/@fontsource/overpass/100.css";
@@ -46,6 +47,14 @@ a{
     cursor: pointer;
 }
 
+.ms_btn-search{
+    padding: 0;
+    background-color: transparent;
+    font-size: .8rem;
+    color: white;
+    border: none;
+}
+
 .ms_btn-small{
     padding-right: 1rem;
     padding-left: 1rem;
@@ -55,4 +64,10 @@ a{
 .ms_btn-black{
     color: white;
     background-color: $heading-txt-color;
+    
+    &:hover{
+        background-color: lighten($heading-txt-color, 5%);
+        color: white;
+    }
 }
+
