@@ -48,7 +48,7 @@ export default{
                 </a>
             </div>
             
-            <nav class="header-nav d-flex align-items-center">
+            <nav class="header-nav d-flex align-items-center justify-content-end">
                 <ul>
                     <li 
                         v-for="(link, index) in links" 
@@ -72,11 +72,15 @@ export default{
 
     header{
         background-color: $main-light-blue;
-        height: $header-height;
-        
-        font-size: .8rem;
+        height: $header-height; 
+        font-size: .9rem;
+
+        .header-logo{
+            width: 18%;
+        }
 
         .header-nav{
+            width: 80%;
             color: white;
         }
     }
