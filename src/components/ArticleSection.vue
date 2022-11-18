@@ -26,7 +26,7 @@ export default{
         <div class="section-main">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-4" v-for="article in store.articles.slice(0, 3)">
+                    <div class="col-12 col-md-4" v-for="(article, index) in store.articles.slice(0, 3)" :key="index">
                         <ArticleCard :element="article" :isTutorial="false"/>
                     </div>
 
@@ -34,7 +34,7 @@ export default{
                         Banner
                     </div>
 
-                    <div class="col-12 col-md-4" v-for="article in store.articles.slice(3, 7)">
+                    <div class="col-12 col-md-4" v-for="(article, index) in store.articles.slice(3, 7)" :key="index">
                         <ArticleCard :element="article" :isTutorial="false"/>
                     </div>
 
@@ -48,7 +48,7 @@ export default{
                             <h2 class="heading">Tutorials &amp; Guides</h2>
                         </div>
                         <!-- Card -->
-                        <template v-for="article in store.tutorialArticles">
+                        <template v-for="(article, index) in store.tutorialArticles" :key="index">
                             <ArticleCard :element="article" :isTutorial="true"/>
                         </template>
                     </div>
