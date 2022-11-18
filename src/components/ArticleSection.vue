@@ -1,10 +1,12 @@
 <script>
 import ArticleCard from "./ArticleCard.vue";
+import ArticleBanner from "./ArticleBanner.vue";
 import { store } from "../store"
 export default{
     name:"ArticleSection",
     components:{
-        ArticleCard
+        ArticleCard,
+        ArticleBanner
     },
     data(){
         return{
@@ -31,15 +33,15 @@ export default{
                     </div>
 
                     <div class="col-12">
-                        Banner
+                        <ArticleBanner :element="store.featured"/>
                     </div>
 
                     <div class="col-12 col-md-4" v-for="(article, index) in store.articles.slice(3, 7)" :key="index">
                         <ArticleCard :element="article" :isTutorial="false"/>
                     </div>
 
-                    <div class="col-12 col-md-8">
-                        Banner
+                    <div class="col-12 col-lg-8">
+                        <ArticleBanner :element="store.review"/>
                     </div>
 
                     <div class="col-12 col-lg-4" >

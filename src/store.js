@@ -94,12 +94,12 @@ export const store = reactive({
             imgAlt: "Hand clicking a smartwatch button"
          },
          {
-            title : "Cras malesuada et orci eget pharetra",
+            title : "Marius viverra atisan ipsum eget felis primis efficitur varius",
             date : "October 11th, 2015",
             comments : "Comments Off",
             url: "/cras-malesuada",
             type : "reviewed product",
-            text : "Donec finibus sit amet orci eget ultricies. Praesent posuere ante ut erat fringilla, vestibulum placerat metus mattis. Aenan dictum vitae nisl",
+            text : "In quis lectus sed leo elementum faucibus in dapibus dictum. Nullamolestie tortor nec lectus venenatis, sed bladit dui, dolor at bibendum sadips ets ipsum dolores ficilis uns leo lectus",
             imgBigName : "featured_article_2_bg",
             imgNormalName : null,
             imgSmallName : null,

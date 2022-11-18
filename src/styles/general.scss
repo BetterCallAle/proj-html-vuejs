@@ -79,6 +79,12 @@ a{
     }
 }
 
+.fa-chevron-right{
+    font-size: .6rem;
+    margin-left: .5rem;
+    vertical-align: middle;
+}
+
 /* Colors */
 .bg-off-white{
     background-color: $off-white;
@@ -119,6 +125,10 @@ a{
     font-size: .9rem;
 }
 
+.ms_btn-big{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
 
 .ms_btn-black{
     color: white;

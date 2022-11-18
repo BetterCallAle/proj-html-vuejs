@@ -33,11 +33,5 @@ export default {
     p{
       margin-bottom: 1.5rem;
     }
-
-    .fa-chevron-right{
-        font-size: .6rem;
-        margin-left: .5rem;
-        vertical-align: middle;
-    }
 }
 </style>

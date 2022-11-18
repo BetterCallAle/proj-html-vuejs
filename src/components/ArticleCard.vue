@@ -91,7 +91,7 @@ export default{
     .ms_card-wrapper{
         display: flex;
         gap: .5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.3rem;
 
         .ms_card-date{
             margin-bottom: 0;
