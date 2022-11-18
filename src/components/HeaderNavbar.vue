@@ -110,8 +110,8 @@ export default {
     color: black;
     text-align: center;
     background-color: white;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     box-shadow: 0 500px 1000px 200px rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 100%;

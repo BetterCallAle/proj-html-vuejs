@@ -36,8 +36,35 @@ a{
     text-decoration:none;
 }
 
+.ms_container-small{
+    padding: 0 1rem;
+}
 
-//buttons
+.app-section{
+    padding: 5rem 0;
+}
+
+.surtitle{
+    color: $surtitle-color;
+    text-align: center;
+    letter-spacing: .3rem;
+    font-size: .7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 1.3rem;
+}
+
+/* Colors */
+.bg-off-white{
+    background-color: $off-white;
+}
+
+.txt-gray{
+    color: $main-txt-color;
+}
+/* /Colors */
+
+/* Buttons */
 .ms_btn{
     padding-top: .6rem;
     padding-bottom: .6rem;
@@ -86,3 +113,13 @@ a{
         color: white;
     }
 }
+/* /Buttons */
+
+/* Media Query*/
+@include for-md{
+    .ms_container-small{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+/* /Media Query */

@@ -1,10 +1,12 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
 import JumboTop from './components/JumboTop.vue';
+import AppDescription from './components/AppDescription.vue';
 export default{
   components:{
     AppHeader,
-    JumboTop
+    JumboTop,
+    AppDescription
   }
 }
 </script>
@@ -16,6 +18,7 @@ export default{
   <!-- Main -->
   <main>
     <JumboTop />
+    <AppDescription />
   </main>
 
 </template>
