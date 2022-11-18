@@ -12,10 +12,12 @@ export default{
     },
     computed:{
         imgSize(){
+            // if isTutorial is true, return a imgSmallestName key
             if(this.isTutorial){
-                return "imgSmallName"
+                return "imgSmallestName"
+            // else return imgBigName key
             } else {
-                return "imgNormalName"
+                return "imgBigName"
             }
         }
     }
@@ -25,14 +27,13 @@ export default{
 <template>
     <div class="article-card">
         <div class="article-card-img">
-            <!-- Article img -->
-            <img :src="getImgPath(element[imgSize])" alt="">
+            <img :src="getImgPath(element[imgSize])" :alt="element.imgAlt">
         </div>
 
         <div class="article-card-txt">
             <h4>{{ element.title }}</h4>
             <span>{{ element.date }} &VerticalSeparator; {{ element.comments }}</span>
-            <p>{{ element.text }}</p>
+            <p v-if="!isTutorial">{{ element.text }}</p>
         </div>
     </div>
 </template>

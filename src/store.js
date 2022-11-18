@@ -11,7 +11,8 @@ export const store = reactive({
            imgBigName : "post_feat_img_25-700x441",
            imgNormalName : "post_feat_img_25-320x202",
            imgSmallName : null,
-           imgSmallestName : null
+           imgSmallestName : null,
+           imgAlt: "iPhone on a couch"
         },
         {
             title : "Vivamus pellenteque, felis quis varius",
@@ -22,7 +23,8 @@ export const store = reactive({
             imgBigName : "post_feat_img_24-700x441",
             imgNormalName : "post_feat_img_24-320x202",
             imgSmallName : null,
-            imgSmallestName : null
+            imgSmallestName : null,
+            imgAlt: "iPhone taking sunset photo"
          },
          {
             title : "Donec ornare pretium eget scelisque justo",
@@ -33,7 +35,8 @@ export const store = reactive({
             imgBigName : "post_feat_img_23-700x441",
             imgNormalName : "post_feat_img_23-320x202",
             imgSmallName : "post_feat_img_23-177x142",
-            imgSmallestName : "post_feat_img_23-147x118"
+            imgSmallestName : "post_feat_img_23-147x118",
+            imgAlt: "Smartwatch"
          },
          {
             title : "Fusce sollicitudin nunc sed placerat varius",
@@ -44,7 +47,8 @@ export const store = reactive({
             imgBigName : "post_feat_img_22-700x441",
             imgNormalName : "post_feat_img_22-320x202",
             imgSmallName : "post_feat_img_22-177x142",
-            imgSmallestName : "post_feat_img_22-147x118"
+            imgSmallestName : "post_feat_img_22-147x118",
+            imgAlt: "Tablet"
          },
          {
             title : "Donec facilis sodales leo sit amet laoreet",
@@ -55,7 +59,8 @@ export const store = reactive({
             imgBigName : "post_feat_img_21-700x441",
             imgNormalName : "post_feat_img_21-320x202",
             imgSmallName : null,
-            imgSmallestName : null
+            imgSmallestName : null,
+            imgAlt: "Camera in a display case"
          },
          {
             title : "Proin eu purus sed aru aliquet curabir vens",
@@ -66,7 +71,8 @@ export const store = reactive({
             imgBigName : "post_feat_img_20-700x441",
             imgNormalName : "post_feat_img_20-320x202",
             imgSmallName : "post_feat_img_20-177x142",
-            imgSmallestName : "post_feat_img_20-147x118"
+            imgSmallestName : "post_feat_img_20-147x118",
+            imgAlt: "Desktop monitor"
          },
          {
             title : "Cras malesuada et orci eget pharetra",
@@ -77,7 +83,8 @@ export const store = reactive({
             imgBigName : "featured_article_1_bg",
             imgNormalName : null,
             imgSmallName : null,
-            imgSmallestName : null
+            imgSmallestName : null,
+            imgAlt: "Hand clicking a smartwatch button"
          },
          {
             title : "Cras malesuada et orci eget pharetra",
@@ -88,7 +95,8 @@ export const store = reactive({
             imgBigName : "featured_article_2_bg",
             imgNormalName : null,
             imgSmallName : null,
-            imgSmallestName : null
+            imgSmallestName : null,
+            imgAlt: "Hand holding a smartwatch"
          }
     ],
     articles: [],
