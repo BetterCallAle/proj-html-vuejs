@@ -1,28 +1,32 @@
 <script>
 export default {
   name: "HeaderNavbar",
-  props:{
+  props: {
     links: Array,
-    menuActive: Boolean
-  }
+    menuActive: Boolean,
+  },
 };
 </script>
 
 <template>
   <!-- Navbar -->
-  <nav class="header-nav d-flex flex-row-reverse flex-lg-row align-items-center justify-content-start justify-content-lg-end">
+  <nav
+    class="header-nav d-flex flex-row-reverse flex-lg-row align-items-center justify-content-start justify-content-lg-end"
+  >
     <!-- Pc menu -->
     <ul class="d-none d-lg-block">
-
       <li
         v-for="(link, index) in links"
         :key="index"
         class="d-inline-block ms_margin"
-        :class="{'active' : link.isActive}"
+        :class="{ active: link.isActive }"
       >
-
-        <a :href="link.linkUrl" @click.prevent="$emit('linkClicked', index)" class="header-link">{{ link.linkTxt }}</a>
-
+        <a
+          :href="link.linkUrl"
+          @click.prevent="$emit('linkClicked', index)"
+          class="header-link"
+          >{{ link.linkTxt }}</a
+        >
       </li>
     </ul>
     <!-- /Pc menu -->
@@ -48,7 +52,6 @@ export default {
     </button>
 
     <!-- If the button is clicked -->
-    <div v-if="menuActive" class="wall"></div>
     <div v-if="menuActive" class="mobile-menu">
       <ul>
         <li v-for="(link, index) in links" :key="index">
@@ -63,70 +66,77 @@ export default {
     <button class="ms_btn-search">
       <i class="fa-solid fa-magnifying-glass"></i>
     </button>
-
   </nav>
   <!-- /navbar -->
 </template>
 
 <style lang="scss" scoped>
-    @use "../styles/partials/variables" as *;
-    @use "../styles/partials/mixin" as *;
-    .header-nav {
-    width: 60%;
-    color: white;
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/mixin" as *;
+.header-nav {
+  width: 60%;
+  color: white;
 
-    .header-link{
-      transition: all 300ms linear;
-      &:hover{
-        color: blue;
+  .header-link {
+    display: inline-block;
+    padding: 1rem 0;
+    vertical-align: middle;
+    transition: all 300ms linear;
+    &:hover {
+      color: blue;
+    }
+  }
+
+  .active {
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: $main-light-blue;
+      position: absolute;
+      bottom: -40px;
+      right: 50%;
+      transform: rotate(135deg) translateX(-50%);
+    }
+  }
+
+  .ms_margin {
+    margin-left: 1rem;
+  }
+  .mobile-menu {
+    width: 100%;
+    color: black;
+    text-align: center;
+    background-color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 500px 1000px 200px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 125ms linear;
+
+    .header-link {
+      width: 100%;
+      &:hover {
+        background-color: $light-dark;
       }
     }
+  }
+}
 
-    .active{
-        position: relative;
-        &::after{
-            content: "";
-            display: block;
-            width: 30px;
-            height: 30px;
-            background-color: $main-light-blue;
-            position: absolute;
-            bottom: -50px;
-            right: 50%;
-            transform: rotate(135deg) translateX(-50%);
-        }
-    }
+/* Media Query */
+@include for-lg {
+  .header-nav {
+    width: 80%;
 
     .ms_margin {
-        margin-left: 1rem;
+      margin-left: 0;
+      margin-right: 3rem;
     }
-    .mobile-menu {
-        width: 100%;
-        color: black;
-        text-align: center;
-        background-color: white;
-        border-bottom-left-radius: 30px;
-        border-bottom-right-radius: 30px;
-        box-shadow: 0 300px 1000px 200px rgba(0, 0, 0, 0.5);
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-
-        li {
-            margin-bottom: 1rem;
-        }
-    }
-    }
-
-    @include for-lg {
-    .header-nav {
-        width: 80%;
-
-        .ms_margin {
-          margin-left: 0;
-          margin-right: 3rem;
-        }
-    }
-    }
+  }
+}
 </style>

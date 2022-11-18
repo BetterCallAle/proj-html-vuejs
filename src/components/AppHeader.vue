@@ -109,6 +109,10 @@ export default{
     header{
         .header-logo{
             width: 18%;
+            padding: 1rem 0;
+            img{
+                vertical-align: middle;
+            }
         }
     }
 }
