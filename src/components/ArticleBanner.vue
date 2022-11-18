@@ -13,9 +13,9 @@ export default{
 </script>
 
 <template>
-    <div class="ms_card-banner">
+    <div class="ms_card-banner" :style="{backgroundImage: `url(${getImgPath(element.imgBigName)})`}">
+
         <a href="#" class="ms_card-banner-wrapper">
-            <img :src="getImgPath(element.imgBigName)" :alt="element.imgAlt">
     
             <div class="ms_card-info text-light">
                 <h5 class="surtitle text-light">{{ element.type }}</h5>
@@ -30,20 +30,13 @@ export default{
 <style lang="scss" scoped>
 @use "../styles/partials/mixin" as *;
 .ms_card-banner{
-    position: relative;
-    overflow: hidden;
-    img{
-        height: 500px;
-        object-fit: cover;
-        object-position: right;
-        transition: all 125ms linear;
-    }
+    min-height: 57vh;
+    display: flex;
+    align-items: end;
+    padding: 5em 3em;
+    background-size: cover;
+    background-position: center;
     .ms_card-info{
-        padding: 3rem;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
         .banner-heading{
             font-weight: 700;
             margin: 0;
