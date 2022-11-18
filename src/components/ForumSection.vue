@@ -119,9 +119,11 @@ export default{
 
         /* Hover */
         &:hover{
-            background-color: $main-light-blue;
-            border-top: 2px solid white;
             border-radius: 30px;
+        }
+
+        &:hover .box-wrapper{
+            color: orange;
         }
     }
 
