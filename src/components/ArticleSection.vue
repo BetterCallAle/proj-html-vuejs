@@ -25,7 +25,7 @@ export default{
 
         <div class="section-main">
             <div class="container">
-                <div class="row">
+                <div class="row gy-5">
                     <div class="col-12 col-md-4" v-for="(article, index) in store.articles.slice(0, 3)" :key="index">
                         <ArticleCard :element="article" :isTutorial="false"/>
                     </div>
@@ -42,7 +42,7 @@ export default{
                         Banner
                     </div>
 
-                    <div class="col-12 col-md-4" >
+                    <div class="col-12 col-lg-4" >
                         <!-- Heading -->
                         <div class="col-heading">
                             <h2 class="heading">Tutorials &amp; Guides</h2>
@@ -59,5 +59,10 @@ export default{
 </template>
 
 <style lang="scss" scoped>
-
+.section-main{
+    margin-top: 5rem;
+    .col-heading{
+        margin-bottom: 4rem;
+    }
+}
 </style>
