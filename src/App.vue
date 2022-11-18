@@ -2,11 +2,13 @@
 import AppHeader from './components/AppHeader.vue';
 import JumboTop from './components/JumboTop.vue';
 import AppDescription from './components/AppDescription.vue';
+import ArticleSection from './components/ArticleSection.vue';
 export default{
   components:{
     AppHeader,
     JumboTop,
-    AppDescription
+    AppDescription,
+    ArticleSection
   }
 }
 </script>
@@ -19,6 +21,7 @@ export default{
   <main>
     <JumboTop />
     <AppDescription />
+    <ArticleSection />
   </main>
 
 </template>
