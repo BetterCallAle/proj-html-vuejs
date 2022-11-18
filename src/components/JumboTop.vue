@@ -6,7 +6,7 @@ export default {
 
 <template>
   <section id="jumbo-top">
-      <div class="container">
+      <div class="container text-center text-md-start">
         <h1>Tech Forum!</h1>
         <p>Discuss all the latest technology news and trends</p>
         <a class="ms_btn ms_btn-normal ms_btn-light-blue">GET AVADA NOW! <i class="fa-solid fa-chevron-right"></i></a>
@@ -27,6 +27,11 @@ export default {
     h1{
         font-size: 5rem;
         font-weight: 700;
+        margin: 0;
+    }
+
+    p{
+      margin-bottom: 1.5rem;
     }
 
     .fa-chevron-right{
