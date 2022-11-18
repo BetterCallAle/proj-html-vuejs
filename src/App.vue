@@ -3,13 +3,15 @@ import AppHeader from './components/AppHeader.vue';
 import JumboTop from './components/JumboTop.vue';
 import AppDescription from './components/AppDescription.vue';
 import ArticleSection from './components/ArticleSection.vue';
+import AppSpacing from './components/AppSpacing.vue';
 import {store} from "./store";
 export default{
   components:{
     AppHeader,
     JumboTop,
     AppDescription,
-    ArticleSection
+    ArticleSection,
+    AppSpacing
   },
   data(){
     return{
@@ -54,6 +56,7 @@ export default{
     <JumboTop />
     <AppDescription />
     <ArticleSection />
+    <AppSpacing :text="'read our blog'" />
   </main>
 
 </template>
