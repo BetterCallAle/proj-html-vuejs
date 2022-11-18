@@ -48,14 +48,15 @@ export default{
 @use "../styles/partials/variables" as *;
 .ms_card{
 
-    .ms_card-img{
+    &-img{
         overflow: hidden;
 
         img {
             transition: all 125ms linear;
         }
     }
-    .ms_card-txt{
+    
+    &-txt{
         .ms_card-heading{
             font-size: .9rem;
             font-weight: 900;
@@ -82,6 +83,10 @@ export default{
     /* Hover */
     &:hover &-img img{
         scale: 1.5;
+    }
+
+    &:hover a{
+        color: inherit;
     }
 }
 

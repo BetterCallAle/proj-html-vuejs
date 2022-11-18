@@ -122,7 +122,7 @@ export default {
     .header-link {
       width: 100%;
       &:hover {
-        background-color: $light-dark;
+        background-color: $off-white;
       }
     }
   }

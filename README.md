@@ -1,7 +1,13 @@
-# Vue 3 + Vite
+# Midterm Boolean project
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This project is created by [BetterCallAle](https://github.com/BetterCallAle) as a midterm project for the [Boolean Tech Academy](https://boolean.careers/) course.
+Is a fully responsive and interactive tech forum homepage
 
-## Recommended IDE Setup
+## Tools used
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- [npm package manager](https://www.npmjs.com/)
+- [Vue](https://vuejs.org/) + [Vite](https://vitejs.dev/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Sass](https://sass-lang.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [FontSource](https://fontsource.org/) font: [Overpass](https://fontsource.org/fonts/overpass)
