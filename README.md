@@ -5,9 +5,12 @@ Is a fully responsive and interactive tech forum homepage
 
 ## Tools used
 
-- [npm package manager](https://www.npmjs.com/)
+- [Npm package manager](https://www.npmjs.com/)
 - [Vue](https://vuejs.org/) + [Vite](https://vitejs.dev/)
 - [Bootstrap](https://getbootstrap.com/)
 - [Sass](https://sass-lang.com/)
 - [Font Awesome](https://fontawesome.com/)
-- [FontSource](https://fontsource.org/) font: [Overpass](https://fontsource.org/fonts/overpass)
+- [FontSource](https://fontsource.org/)
+
+### Font used
+- [Overpass](https://fontsource.org/fonts/overpass)
