@@ -1,10 +1,12 @@
 <script>
+import SectionHeading from "./SectionHeading.vue";
 import ArticleCard from "./ArticleCard.vue";
 import ArticleBanner from "./ArticleBanner.vue";
 import { store } from "../store"
 export default{
     name:"ArticleSection",
     components:{
+        SectionHeading,
         ArticleCard,
         ArticleBanner
     },
@@ -19,10 +21,7 @@ export default{
 <template>
     <section id="article-section" class="app-section">
         <div class="container">
-            <div class="section-heading text-center">
-                <h5 class="surtitle">Phasellus eget metus</h5>
-                <h2 class="heading">All the latest news</h2>
-            </div>
+           <SectionHeading :title="'All the latest news'" />
         </div>
 
         <div class="section-main">

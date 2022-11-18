@@ -26,7 +26,7 @@ export default{
 
 <template>
     <!-- If isTutorial si true add the class 'tutorial-card' else add the class 'article-card' -->
-    <div :class="{'tutorial-card': isTutorial, 'article-card': !isTutorial}" class="ms_card">
+    <div :class="{'tutorial-card': isTutorial, 'article-card': !isTutorial}" class="ms_card txt-gray">
         <a :href="element.url" class="ms_card-wrapper">
             <div class="ms_card-img">
                 <img :src="getImgPath(element[imgSize])" :alt="element.imgAlt">
@@ -56,7 +56,6 @@ export default{
         }
     }
     .ms_card-txt{
-        color: $main-txt-color;
         .ms_card-heading{
             font-size: .9rem;
             font-weight: 900;
