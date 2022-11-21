@@ -5,7 +5,7 @@ export default{
 </script>
 
 <template>
-    <section id="app-description" class="bg-off-white app-section-top-padding app-section-bottom-padding">
+    <section id="app-description" class="bg-off-white padding-top padding-bottom">
         <div class="ms_container-small text-center">
             <h5 class="surtitle">Avada Forum is the place to be</h5>
             <p class="txt-gray">In quis lectus sed leo elementum faubicus in dapibus dictum. Nulla molestie tortor nec lectus veneratis, sed blandit dui finibus. dolor at, bibendum purus. Donec vehicula nec tortor ac finibus.</p>
