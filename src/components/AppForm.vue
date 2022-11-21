@@ -1,6 +1,25 @@
 <script>
 export default{
-    name: "AppForm"
+    name: "AppForm",
+    data(){
+        return{
+            isUserMailValid: true,
+            userMail: ""
+        }
+    },
+    methods:{
+        checkUserMail(){
+            // chek if user write a correct email
+            if(!this.userMail.includes("@") || !this.userMail.includes(".")){
+                this.isUserMailValid = false;
+            } else {
+                this.isUserMailValid = true;
+            }
+
+            //clean the input
+            this.userMail = "";
+        }
+    }
 }
 </script>
 
@@ -9,8 +28,16 @@ export default{
         <div class="ms_container-small text-center">
             <h2>Subscribe to our Newsletter</h2>
             <form>
-                <input class="email-input" type="text" placeholder="Insert your email*">
-                <button class="ms_btn ms_btn-bigger ms_btn-black">Send</button>
+                <small v-if="!isUserMailValid" class="error">The email is not valid. Please insert a valid email.</small>
+                
+                <input class="email-input" 
+                       type="text" 
+                       placeholder="Insert your email*" 
+                       v-model.trim="userMail"
+                >
+
+                <button @click.prevent="checkUserMail" class="ms_btn ms_btn-bigger ms_btn-black">Send</button>
+
             </form>
         </div>
     </section>
@@ -33,6 +60,13 @@ export default{
             &:focus{
                 outline:1px solid $main-txt-color
             }
+        }
+
+        .error{
+            display: block;
+            color: red;
+            font-weight: 500;
+            margin-bottom: .5rem;
         }
 
         /* Media Query */
