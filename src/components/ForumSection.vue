@@ -57,11 +57,11 @@ export default{
 </script>
 
 <template>
-    <section id="forum-section" class="app-section-top-padding bg-off-white">
+    <section id="forum-section" class="padding-top bg-off-white">
         <div class="container">
             <SectionHeading :title="'Forum Sections'" />
 
-            <div class="main-forum-section app-section-bottom-padding">
+            <div class="main-forum-section padding-bottom">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 gy-5">
                     <div class="col" v-for="(item, index) in links" :key="index">
                         <div class="box">

@@ -24,7 +24,7 @@ export default{
 </script>
 
 <template>
-    <section id="app-form" class="app-section-top-padding app-section-bottom-padding bg-off-white">
+    <section id="app-form" class="padding-top padding-bottom bg-off-white">
         <div class="ms_container-small text-center">
             <h2>Subscribe to our Newsletter</h2>
             <form>
@@ -52,13 +52,13 @@ export default{
         padding: 1rem .3rem;
         .email-input{
             padding: .6rem;
-            border: none;
+            border: 1px solid $light-dark;
             border-radius: 2px;
             margin-bottom: 1rem;
             width: 100%;
 
             &:focus{
-                outline:1px solid $main-txt-color
+                outline:1px solid $light-dark;
             }
         }
 

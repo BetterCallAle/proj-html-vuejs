@@ -40,11 +40,11 @@ a{
     padding: 0 1rem;
 }
 
-.app-section-top-padding{
+.padding-top{
     padding-top: 5rem;
 }
 
-.app-section-bottom-padding{
+.padding-bottom{
     padding-bottom: 5rem;
 }
 
@@ -78,6 +78,12 @@ a{
     vertical-align: middle;
 }
 
+.footer-nav-heading{
+    font-size: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
 /* Colors */
 .bg-off-white{
     background-color: $off-white;

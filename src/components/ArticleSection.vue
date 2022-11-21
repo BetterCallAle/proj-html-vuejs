@@ -21,14 +21,14 @@ export default {
 </script>
 
 <template>
-  <section id="article-section" class="app-section-top-padding">
+  <section id="article-section" class="padding-top">
     <div class="container">
       <!-- Heading -->
       <SectionHeading :title="'All the latest news'" />
       <!-- /Heading -->
 
       <!-- section main -->
-      <div class="section-main app-section-bottom-padding">
+      <div class="section-main padding-bottom">
 
         <div class="row gy-5">
 

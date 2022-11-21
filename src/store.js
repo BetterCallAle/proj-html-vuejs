@@ -1,6 +1,7 @@
 import { reactive } from "vue";
 
 export const store = reactive({
+   // Articles data
     allArticles:[
         {
            title : "Morbi vitae dui euismod vulpate sollicitudin",
@@ -110,5 +111,60 @@ export const store = reactive({
     articles: [],
     tutorialArticles: [],
     featured: null,
-    review: null
+    review: null,
+   // Footer menu data
+   popular: [
+      {
+         linkTxt: "Nam a dolor volupat massa auctor semper",
+         linkUrl: "/nam"
+      },
+      {
+         linkTxt: "Sed euismod nunc urna fermentum arcu dapibus fringilla",
+         linkUrl: "/sed"
+      },
+      {
+         linkTxt: "Cras lacinia tellus id mauris finibus lacus molestie",
+         linkUrl: "/cras"
+      },
+      {
+         linkTxt: "Curabitur a scelerisque ligula",
+         linkUrl: "/curabitur"
+      }
+  ],
+  recent: [
+      {
+         linkTxt: "Cras lacinia tellus id mauris finibus lacus molestie",
+         linkUrl: "/cras"
+      },
+      {
+         linkTxt: "Proin at ligula sagittis vestibulum nisi vitae",
+         linkUrl: "/prin"
+      },
+      {
+         linkTxt: "Sed nec metus at est tincidunt elementum",
+         linkUrl: "/sed"
+      },
+      {
+         linkTxt: "Nulla egestas nulla eu nulla suscipit molestie",
+         linkUrl: "/nulla"
+      }
+  ],
+  latest:[
+      {
+         linkTxt: "Cras lacinia tellus id mauris finibus lacus molestie",
+         linkUrl: "/cras"
+      },
+      {
+         linkTxt: "Cras lacinia tellus id mauris finibus lacus molestie",
+         linkUrl: "/cras"
+      },
+      {
+         linkTxt: "Nulla egestas nulla eu nulla suscipit molestie",
+         linkUrl: "/nulla"
+      },
+      {
+         linkTxt: "Mauris ac nibh quis eros sagittis lacinia a et dui",
+         linkUrl: "/mauris"
+      }
+  ]
 })

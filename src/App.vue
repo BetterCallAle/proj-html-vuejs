@@ -6,6 +6,7 @@ import ArticleSection from './components/ArticleSection.vue';
 import ForumSection from './components/ForumSection.vue';
 import AppCta from './components/AppCta.vue';
 import AppForm from './components/AppForm.vue';
+import AppFooter from './components/AppFooter.vue';
 import {store} from "./store";
 export default{
   components:{
@@ -15,7 +16,8 @@ export default{
     ArticleSection,
     ForumSection,
     AppCta,
-    AppForm
+    AppForm,
+    AppFooter
   },
   data(){
     return{
@@ -55,6 +57,7 @@ export default{
   <!-- Header -->
   <AppHeader />
   <!-- /Header -->
+
   <!-- Main -->
   <main>
     <JumboTop />
@@ -65,6 +68,10 @@ export default{
     <AppForm />
   </main>
   <!-- /Main -->
+
+  <!-- Footer -->
+  <AppFooter />
+  <!-- /Footer -->
 
 </template>
 
