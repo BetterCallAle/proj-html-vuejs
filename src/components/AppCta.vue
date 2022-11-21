@@ -15,12 +15,15 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/mixin" as *;
+
 #app-cta{
     background-image: url(../assets/img/join_now_cta_bg.jpg);
     background-size: cover;
 
     .cta-wrapper{
-        padding: 7rem 13rem;
+        padding: 7rem 2rem;
+        text-align: center;
         h2{
             font-size: 3rem;
             font-weight: 700;
@@ -31,6 +34,13 @@ export default{
             margin: 2rem 0;
         }
     }
+    
+    @include for-md{
+        .cta-wrapper{
+            padding: 7rem 13rem;
+        }
+    }
 }
+
 
 </style>
