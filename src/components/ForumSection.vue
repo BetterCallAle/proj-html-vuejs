@@ -1,9 +1,11 @@
 <script>
 import SectionHeading from './SectionHeading.vue';
+import AppSpacing from './AppSpacing.vue';
 export default{
     name: "ForumSection",
     components:{
-        SectionHeading
+        SectionHeading,
+        AppSpacing
     },
     data(){
         return{
@@ -55,11 +57,11 @@ export default{
 </script>
 
 <template>
-    <section id="forum-section" class="app-section bg-off-white">
+    <section id="forum-section" class="app-section-top-padding bg-off-white">
         <div class="container">
             <SectionHeading :title="'Forum Sections'" />
 
-            <div class="main-forum-section">
+            <div class="main-forum-section app-section-bottom-padding">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 gy-5">
                     <div class="col" v-for="(item, index) in links" :key="index">
                         <div class="box">
@@ -79,6 +81,8 @@ export default{
                 </div>
             </div>
         </div>
+
+        <AppSpacing :text="'go to our forum'" />
     </section>
 </template>
 

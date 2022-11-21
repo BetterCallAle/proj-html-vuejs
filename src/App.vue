@@ -3,7 +3,6 @@ import AppHeader from './components/AppHeader.vue';
 import JumboTop from './components/JumboTop.vue';
 import AppDescription from './components/AppDescription.vue';
 import ArticleSection from './components/ArticleSection.vue';
-import AppSpacing from './components/AppSpacing.vue';
 import ForumSection from './components/ForumSection.vue';
 import {store} from "./store";
 export default{
@@ -12,7 +11,6 @@ export default{
     JumboTop,
     AppDescription,
     ArticleSection,
-    AppSpacing,
     ForumSection
   },
   data(){
@@ -52,16 +50,15 @@ export default{
 <template>
   <!-- Header -->
   <AppHeader />
-
+  <!-- /Header -->
   <!-- Main -->
   <main>
     <JumboTop />
     <AppDescription />
     <ArticleSection />
-    <AppSpacing :text="'read our blog'" />
     <ForumSection />
-    <AppSpacing :text="'go to our forum'" />
   </main>
+  <!-- /Main -->
 
 </template>
 

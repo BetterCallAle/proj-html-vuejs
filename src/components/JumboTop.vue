@@ -19,7 +19,9 @@ export default {
 
 #jumbo-top{
     margin-top: $header-height;
-    padding: 10rem 0;
+    height: calc(100vh - $header-height);
+    display: flex;
+    align-items: center;
     background-image: url(../assets/img/home_slider_bg.jpg);
     background-position: center;
     background-size: cover;

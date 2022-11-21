@@ -19,7 +19,6 @@ export default{
 <style lang="scss" scoped>
 @use "../styles/partials/variables" as *;
 .app-spacing{
-    padding: 2rem 0;
     background-color: $heading-txt-color;
     color: white;
 
@@ -27,6 +26,10 @@ export default{
         font-size: .8rem;
         font-weight: 700;
         text-transform: uppercase;
+        display: block;
+        width: 100%;
+        padding: 3rem 0;
+        transition: all 250ms linear;
     }
 }
 </style>
