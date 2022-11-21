@@ -4,6 +4,7 @@ import JumboTop from './components/JumboTop.vue';
 import AppDescription from './components/AppDescription.vue';
 import ArticleSection from './components/ArticleSection.vue';
 import ForumSection from './components/ForumSection.vue';
+import AppCta from './components/AppCta.vue';
 import {store} from "./store";
 export default{
   components:{
@@ -11,7 +12,8 @@ export default{
     JumboTop,
     AppDescription,
     ArticleSection,
-    ForumSection
+    ForumSection,
+    AppCta
   },
   data(){
     return{
@@ -57,6 +59,7 @@ export default{
     <AppDescription />
     <ArticleSection />
     <ForumSection />
+    <AppCta />
   </main>
   <!-- /Main -->
 

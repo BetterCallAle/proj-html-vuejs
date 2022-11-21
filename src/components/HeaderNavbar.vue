@@ -32,7 +32,6 @@ export default {
     <!-- /Pc menu -->
 
     <!-- Mobile and Tablet menu -->
-
     <!-- If Menu is close -->
     <button
       v-if="!menuActive"
@@ -61,11 +60,15 @@ export default {
     </div>
     <!-- /Mobile and Tablet menu -->
 
-    <a href="#" class="ms_btn ms_btn-small ms_btn-black ms_margin">JOIN US</a>
+    <!-- Join button -->
+    <a href="#" class="ms_btn ms_btn-small ms_btn-black ms_margin">Join us</a>
+    <!-- /Join button -->
 
+    <!-- Search -->
     <button class="ms_btn-search">
       <i class="fa-solid fa-magnifying-glass"></i>
     </button>
+    <!-- /Search -->
   </nav>
   <!-- /navbar -->
 </template>

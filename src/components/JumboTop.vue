@@ -9,7 +9,7 @@ export default {
       <div class="container text-center text-md-start">
         <h1>Tech Forum!</h1>
         <p>Discuss all the latest technology news and trends</p>
-        <a class="ms_btn ms_btn-normal ms_btn-light-blue">GET AVADA NOW! <i class="fa-solid fa-chevron-right"></i></a>
+        <a class="ms_btn ms_btn-normal ms_btn-light-blue">Get Avada now! <i class="fa-solid fa-chevron-right"></i></a>
       </div>
   </section>
 </template>

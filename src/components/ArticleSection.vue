@@ -51,7 +51,7 @@ export default {
           <div class="col-12 col-lg-4">
             <!-- Col Tutorial Heading -->
             <div class="col-heading">
-              <h2 class="heading">Tutorials &amp; Guides</h2>
+              <h3 class="heading">Tutorials &amp; Guides</h3>
             </div>
             <!-- Tutorial Cards -->
             <template v-for="(article, index) in store.tutorialArticles" :key="index">

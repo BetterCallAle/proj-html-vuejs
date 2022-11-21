@@ -21,7 +21,7 @@ export default{
                 <h5 class="surtitle text-light">{{ element.type }}</h5>
                 <h2 class="banner-heading">{{ element.title }}</h2>
                 <p class="banner-txt">{{ element.text }}</p>
-                <a href="#" class="ms_btn ms_btn-big ms_btn-black">READ MORE <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="#" class="ms_btn ms_btn-big ms_btn-black">Read More <i class="fa-solid fa-chevron-right"></i></a>
             </div>
         </a>
     </div>
