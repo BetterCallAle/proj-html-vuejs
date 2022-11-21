@@ -22,7 +22,10 @@ export default{
     background-size: cover;
 
     .cta-wrapper{
-        padding: 7rem 2rem;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
         text-align: center;
         h2{
             font-size: 3rem;
@@ -34,10 +37,18 @@ export default{
             margin: 2rem 0;
         }
     }
+
+    @include for-sm{
+        .cta-wrapper{
+            padding-left: 6rem;
+            padding-right: 6rem;
+        }
+    }
     
     @include for-md{
         .cta-wrapper{
-            padding: 7rem 13rem;
+            padding-right: 13rem;
+            padding-left: 13rem;
         }
     }
 }
