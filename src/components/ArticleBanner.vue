@@ -30,7 +30,8 @@ export default{
 <style lang="scss" scoped>
 @use "../styles/partials/mixin" as *;
 .ms_card-banner{
-    min-height: 57vh;
+    height: 100%;
+    min-height: 60vh;
     display: flex;
     align-items: end;
     padding: 5em 3em;
