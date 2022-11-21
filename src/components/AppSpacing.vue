@@ -20,6 +20,7 @@ export default{
 @use "../styles/partials/variables" as *;
 .app-spacing{
     background-color: $heading-txt-color;
+    margin-top: 2rem;
     color: white;
 
     .app-spacing-link{
