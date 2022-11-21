@@ -43,35 +43,15 @@ export default{
                     linkUrl: "/contact-us",
                     isActive: false
                 }
-            ],
-
-            isMenuActive: false,
-
-            defaultActive: 0
-        }
-    },
-    methods:{
-        // Toggle the boolean in isMenuActive
-        openMenu(){
-            this.isMenuActive = !this.isMenuActive;
-        },
-
-        // Switch the active class
-        letLinkActive(index){
-            // remove the active class from the prev link
-            this.links[this.defaultActive].isActive = false;
-            // add the active calss to the current link
-            this.links[index].isActive = true;
-            // make the default active link the clicked one
-            this.defaultActive = index;
+            ]
         }
     }
 }
 </script>
 
 <template>
-    <header class="d-flex align-items-center">
-        <div class="container d-flex justify-content-between">
+    <header>
+        <div class="container d-flex justify-content-between align-items-center h-100">
             <!-- logo -->
             <div class="header-logo">
                 <a href="#">
@@ -80,7 +60,7 @@ export default{
             </div>
             <!-- /logo -->
 
-            <HeaderNavbar :links="links" :menuActive="isMenuActive" @buttonClicked="openMenu" @linkClicked="letLinkActive"/>
+            <HeaderNavbar :links="links"/>
         </div>
     </header>
 </template>
@@ -109,10 +89,6 @@ export default{
     header{
         .header-logo{
             width: 18%;
-            padding: 1rem 0;
-            img{
-                vertical-align: middle;
-            }
         }
     }
 }

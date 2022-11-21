@@ -12,22 +12,22 @@ export default{
            icons: [
                 {
                     iconName: "fab fa-facebook-f",
-                    iconLink: "www.facebook.com/avadaforum",
+                    iconLink: "facebook.com/avadaforum",
                     iconColor: "blue"
                 },
                 {
                     iconName: "fa-brands fa-instagram",
-                    iconLink: "www.instagram.com/avadaforum",
+                    iconLink: "instagram.com/avadaforum",
                     iconColor: "light-blue"
                 },
                 {
                     iconName: "fa-brands fa-twitter",
-                    iconLink: "www.twitter.com/avadaforum",
+                    iconLink: "twitter.com/avadaforum",
                     iconColor: "dark-blue"
                 },
                 {
                     iconName: "fa-brands fa-youtube",
-                    iconLink: "www.youtube.com/avadaforum",
+                    iconLink: "youtube.com/avadaforum",
                     iconColor: "red"
                 }
            ]
