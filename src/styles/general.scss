@@ -108,6 +108,7 @@ a{
     border: none;
 }
 
+/* Btn sizes */
 .ms_btn-small{
     padding-right: 1rem;
     padding-left: 1rem;
@@ -125,6 +126,13 @@ a{
     padding-right: 2rem;
 }
 
+.ms_btn-bigger{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+/* /Btn sizes */
+
+/* Btn colours */
 .ms_btn-black{
     color: white;
     background-color: $heading-txt-color;
@@ -143,6 +151,7 @@ a{
         color: white;
     }
 }
+/* Btn colours */
 /* /Buttons */
 
 /* Media Query*/
@@ -150,6 +159,7 @@ a{
     .ms_container-small{
         width: 60%;
         margin: 0 auto;
+        padding: 0;
     }
 }
 /* /Media Query */

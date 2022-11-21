@@ -47,8 +47,8 @@ export default{
     
     @include for-md{
         .cta-wrapper{
-            padding-right: 13rem;
-            padding-left: 13rem;
+            padding-right: 15rem;
+            padding-left: 15rem;
         }
     }
 }

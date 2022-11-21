@@ -5,6 +5,7 @@ import AppDescription from './components/AppDescription.vue';
 import ArticleSection from './components/ArticleSection.vue';
 import ForumSection from './components/ForumSection.vue';
 import AppCta from './components/AppCta.vue';
+import AppForm from './components/AppForm.vue';
 import {store} from "./store";
 export default{
   components:{
@@ -13,7 +14,8 @@ export default{
     AppDescription,
     ArticleSection,
     ForumSection,
-    AppCta
+    AppCta,
+    AppForm
   },
   data(){
     return{
@@ -60,6 +62,7 @@ export default{
     <ArticleSection />
     <ForumSection />
     <AppCta />
+    <AppForm />
   </main>
   <!-- /Main -->
 
