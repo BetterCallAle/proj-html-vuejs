@@ -10,10 +10,10 @@ export default{
     methods:{
         checkUserMail(){
             // chek if user write a correct email
-            if(!this.userMail.includes("@") || !this.userMail.includes(".")){
-                this.isUserMailValid = false;
-            } else {
+            if(this.userMail.includes("@") && this.userMail.includes(".")){
                 this.isUserMailValid = true;
+            } else {
+                this.isUserMailValid = false;
             }
 
             //clean the input
