@@ -1,4 +1,4 @@
-# Midterm Boolean project
+# Boolean Midterm project
 
 This project is created by [BetterCallAle](https://github.com/BetterCallAle) as a midterm project for the [Boolean Tech Academy](https://boolean.careers/) course.
 Is a fully responsive and interactive tech forum homepage.
