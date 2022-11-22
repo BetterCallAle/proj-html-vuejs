@@ -27,9 +27,9 @@ export default {
     background-size: cover;
     color: white;
     h1{
-        font-size: 5rem;
-        font-weight: 700;
-        margin: 0;
+      font-size: 5rem;
+      font-weight: 700;
+      margin: 0;
     }
 
     p{
