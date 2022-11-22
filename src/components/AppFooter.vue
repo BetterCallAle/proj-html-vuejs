@@ -86,12 +86,21 @@ export default{
         </div>
         <!-- /Footer Bottom -->
 
+        <!-- Go top button -->
+        <a href="#" class="go-top">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+        <!-- /Go top button -->
+
     </footer>
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
+
 footer{
+    position: relative;
+    
     .footer-nav{
         .footer-nav-txt{
             font-size: .9rem;
@@ -100,7 +109,7 @@ footer{
     }
 
     .footer-bottom{
-        padding: 3rem 0;
+        padding: 1rem 0;
         border-top: 1px solid $light-gray;
         
         .footer-copyright{
@@ -141,5 +150,16 @@ footer{
         }
     }
 
+    .go-top{
+        display: block;
+        position: absolute;
+        padding: .3rem 1rem;
+        color: white; 
+        background-color: $main-txt-color;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        bottom: -10px;
+        right: 20px;
+    }
 }
 </style>
