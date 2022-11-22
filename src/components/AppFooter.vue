@@ -38,9 +38,9 @@ export default{
 
 <template>
     <footer class="padding-top">
-        <div class="container">
-            <!-- Footer Nav -->
-            <nav class="footer-nav padding-bottom">
+        <!-- Footer Nav -->
+        <nav class="footer-nav padding-bottom">
+            <div class="container">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                     <div class="col">
                         <div class="footer-col-wrapper">
@@ -55,10 +55,10 @@ export default{
 
                     <FooterCol :heading="'Latest Replies'" :links="store.latest" />
                 </div>
-            </nav>
-            <!-- /Footer Nav -->
+            </div>
+        </nav>
+        <!-- /Footer Nav -->
 
-        </div>
 
         <!-- Footer Bottom -->
         <div class="footer-bottom">
