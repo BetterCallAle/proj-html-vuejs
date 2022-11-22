@@ -19,6 +19,12 @@ export default{
             } else {
                 return "imgBigName"
             }
+        },
+
+        commentStyle(){
+            if(this.element.comments !== 'Comments Off'){
+                return 'ms_card-comments'
+            }
         }
     }
 }
@@ -35,8 +41,10 @@ export default{
             <div class="ms_card-txt">
                 <h4 class="ms_card-heading">{{ element.title }}</h4>
                 <small class="ms_card-date">{{ element.date }} &VerticalSeparator;</small>
+
                 <!-- If there are comments add the class 'ms_card-comments' -->
-                <small :class="{'ms_card-comments': element.comments !== 'Comments Off'}" class="ms_card-date">{{ element.comments }}</small> 
+                <small :class="commentStyle" class="ms_card-date">{{ element.comments }}</small> 
+
                 <!-- If isTutorial si true don't show the p element -->
                 <p v-if="!isTutorial" class="ms_card-p">{{ element.text }}</p>
             </div>

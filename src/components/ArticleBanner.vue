@@ -47,18 +47,5 @@ export default{
             margin: 2rem 0; 
         }
     }
-
-    /* Hover */
-    &:hover img{
-        scale: 1.2;
-    }
-}
-
-@include for-md{
-    .ms_card-banner{
-        img{
-            height: 100%;
-        }
-    }
 }
 </style>

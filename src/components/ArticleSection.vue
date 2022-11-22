@@ -71,10 +71,6 @@ export default {
   margin-top: 5rem;
   .col-heading {
     margin-bottom: 4rem;
-
-    h2{
-        font-size: 1.7rem;
-    }
   }
 }
 </style>
