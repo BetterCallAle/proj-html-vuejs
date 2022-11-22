@@ -7,6 +7,7 @@ import ForumSection from './components/ForumSection.vue';
 import AppCta from './components/AppCta.vue';
 import AppForm from './components/AppForm.vue';
 import AppFooter from './components/AppFooter.vue';
+import data from './data.json'
 import {store} from "./store";
 export default{
   components:{
@@ -22,14 +23,17 @@ export default{
   data(){
     return{
       store,
+      data
     }
   },
   created(){
-    this.organizeTheArray()
-    console.log(this.store);
+    this.organizeTheArray();
+    this.organizeFooterElements();
   },
   methods:{
     organizeTheArray(){
+      //export the json file in store
+      this.store.allArticles = this.data.articles
       //cycle the allArticles array
       this.store.allArticles.forEach(element => {
         // if the element === "article" push it in the article array
@@ -47,7 +51,14 @@ export default{
         if(element.imgSmallName){
           this.store.tutorialArticles.push(element)
         }
-      });
+      })
+    },
+
+     //Export the footer elements in store
+    organizeFooterElements(){
+        this.store.popular = this.data.popularTopics;
+        this.store.recent = this.data.recentTopics;
+        this.store.latest = this.data.recentTopics;
     }
   }
 }
