@@ -9,6 +9,6 @@ export const store = reactive({
     review: null,
    // Footer menu data
    popular: [],
-  recent: [],
-  latest:[]
+   recent: [],
+   latest:[]
 })
